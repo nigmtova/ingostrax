@@ -301,4 +301,67 @@ body {
     .home-text-box .home-box-h1 {
         font-size: 1.6rem;
     }
+    
+    .home-header-right-img img {
+        width: 100%;
+    }
+
+    .home-text-box {
+        margin: 0;
+    }
+
+    .home-header2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:450px) {
+    .home-text-box .home-box-h1 {
+        font-size: 1.4rem;
+    }
+
+    .home-container {
+        padding: 0;
+    }
+
+    .home-header-left-text h1 {
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .home-text-box .home-t-box-h01 {
+        font-size: 1.6rem;
+    }
+
+    .home-text-icons {
+        width: 100%;
+        max-width: 250px;
+    } 
+
+    .home-text-cards {
+        width: 100%;
+        /* max-width: fit-content; */
+        background: #363d4e;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 1rem;
+    }
+
+    .home-text-big {
+        width: 100%;
+        max-width: 1500px;
+        /* padding: 1rem 2rem; */
+        background-color: #222222;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        padding: 0;
+    }
+
+    .home-text-box {
+        margin: 1rem;
+    }
 }
