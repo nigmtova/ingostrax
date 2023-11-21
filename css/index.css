@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.for_main_navbar ul{
+    display: flex;
+    list-style: none;
+}
+.for_main_navbar{
+    background-color: #222222;
+    color: white;
+}
