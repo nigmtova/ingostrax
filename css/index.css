@@ -2,12 +2,114 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
+body{
+    background-color: #363d4e;
 }
 .for_main_navbar ul{
     display: flex;
+    align-items: center;
     list-style: none;
 }
-.for_main_navbar{
+.index_main{
+    padding: 20px;
+}
+.index_header_card{
     background-color: #222222;
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: 1px solid #555555;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    transition: 0.5s;
+}
+.index_header_bottom_cards{
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+}
+.index_header_bottom_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 23%;
+    min-height: 100px;
+    background-color: #222222;
+    border: 1px solid #555555;
+    border-radius: 20px;
     color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.index_header_bottom_card h2{
+    font-weight: 400;
+    font-size: 15px;
+}
+.index_header_bottom_card img{
+    width: 70px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.index_header_card{
+    color: white;
+    padding: 30px;
+}
+.index_header_card p{
+    margin-top: 15px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.index_header_card h2{
+    font-size: 30px;
+}
+.index_header_bottom_card:hover{
+    scale: 1.05;
+    color: #3fb3ff !important;
+}
+#index_header_bottom_card{
+    color: #3fb3ff;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1000px){
+    .index_header_bottom_card{
+        width: 30%;
+    }
+    .index_header_bottom_cards{
+        justify-content: center;
+        gap: 31px;
+    }
+}
+@media(max-width:800px){
+    .index_header_bottom_card{
+        width: 48%;
+    }
+    .index_header_bottom_cards{
+        justify-content: center;
+        gap: 20px;
+    }
+}
+@media(max-width:800px){
+    .index_header_bottom_card{
+        width: 100%;
+    }
+    .index_header_bottom_cards{
+        justify-content: center;
+        gap: 20px;
+    }
 }
