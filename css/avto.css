@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    color: #fff;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
 }
 
@@ -54,6 +53,7 @@ body {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .home-header-left-text p {
@@ -157,6 +157,7 @@ body {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .home-text-box .home-text-box-p {
@@ -200,6 +201,7 @@ body {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .home-text-icons i {
