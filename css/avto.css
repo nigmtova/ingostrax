@@ -5,10 +5,11 @@
     text-decoration: none;
     outline: none;
     color: #fff;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,19 +18,35 @@ body {
 
 .home-container {
     width: 100%;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
 
 .home-header {
     display: flex;
-    width: 80%;
-    padding: 1rem 1rem;
+    width: 100%;
+    max-width: 1500px;
+    padding: 1rem 2rem;
     background-color: #222222;
     border-radius: 20px;
     border: 1px solid #555555;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.home-header2 {
+    display: none;
+    width: 100%;
+    max-width: 1500px;
+    padding: 1rem 2rem;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid #555555;
+}
+
+.home-header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-header-left-text h1 {
@@ -59,4 +76,292 @@ body {
 .home-header-left-text p span:hover {
     color: #3fb3ff;
     border-bottom: 1px solid #3fb3ff;
+}
+
+.home-header-left-text ul {
+    padding: 1rem;
+}
+
+.home-header-left-text h4 {
+    color: #fff;
+    font-weight: 600;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
+
+.home-header-left-text ul li {
+    line-height: 1.46;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
+
+.home-text-big {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    padding: 1rem 2rem;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid #555555;
+    margin: auto;
+}
+
+.home-text-card {
+    display: block;
+}
+
+.home-text-cards-img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.home-text-cards {
+    width: 450px;
+    background: #363d4e;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #555555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1rem;
+}
+
+.home-text-cards-p p {
+    line-height: 1.46;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+} 
+
+.home-text-cards:hover {
+    background: #222222;
+}
+
+.home-text-box {
+    margin: 1rem;
+    background: #363d4e;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #555555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-text-box:hover {
+    background: #222222;
+}
+
+.home-text-box .home-box-h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-text-box .home-text-box-p {
+    line-height: 1.46;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+    margin-bottom: 1rem;
+}
+
+.home-text-box ul {
+    padding: 1rem;
+}
+
+.home-text-box ul li {
+    line-height: 1.46;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
+
+.home-text-box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-text-icons {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home-t-box-h01 {
+    text-align: center;
+    margin-top: 10%;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-text-icons i {
+    color: #3fb3ff;
+    font-size: 60px;
+}
+
+.home-text-icons p {
+    line-height: 1.46;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
+
+@media (max-width:1650px) {
+    .home-text-box-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:1300px) {
+    .home-text-big {
+        display: block;
+    }
+
+    .home-text-card {
+        display: flex;
+    }
+
+    .home-text-cards-img img {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+    }
+    
+    .home-text-cards {
+        width: 100%;
+        max-width: 450px;
+        background: #363d4e;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 1rem;
+    }
+    
+    .home-text-cards-p p {
+        line-height: 1.46;
+        color: #a2a2a2;
+        font-weight: 400;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+    } 
+}
+
+@media (max-width:1100px) {
+    .home-header {
+        display: none;
+    }
+
+    .home-header2 {
+        display: block;
+    }
+}
+
+@media (max-width:900px) {
+    .home-text-card {
+        width: 100%;
+        display: block;
+    }
+
+    .home-text-cards {
+        width: 100%;
+        max-width: fit-content;
+        background: #363d4e;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 1rem;
+    }
+
+    .home-text-icons {
+        width: 150px;
+    }
+}
+
+@media (max-width:700px) {
+    .home-text-box .home-box-h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width:600px) {
+    .home-text-box .home-box-h1 {
+        font-size: 1.6rem;
+    }
+    
+    .home-header-right-img img {
+        width: 100%;
+    }
+
+    .home-text-box {
+        margin: 0;
+    }
+
+    .home-header2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:450px) {
+    .home-text-box .home-box-h1 {
+        font-size: 1.4rem;
+    }
+
+    .home-container {
+        padding: 0;
+    }
+
+    .home-header-left-text h1 {
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .home-text-box .home-t-box-h01 {
+        font-size: 1.6rem;
+    }
+
+    .home-text-icons {
+        width: 100%;
+        max-width: 250px;
+    } 
+
+    .home-text-cards {
+        width: 100%;
+        /* max-width: fit-content; */
+        background: #363d4e;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 1rem;
+    }
+
+    .home-text-big {
+        width: 100%;
+        max-width: 1500px;
+        /* padding: 1rem 2rem; */
+        background-color: #222222;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        padding: 0;
+    }
+
+    .home-text-box {
+        margin: 1rem;
+    }
 }
