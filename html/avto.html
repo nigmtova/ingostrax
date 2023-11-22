@@ -80,28 +80,28 @@
                 <div class="home-text-box-icon">
                     <div class="home-text-icons">
                         <i class="bi bi-car-front-fill"></i>
-                        <p>Полис ОСАГО надежной страховой</p>
-                        <p>компании</p>
+                        <p class="pp">Полис ОСАГО надежной страховой</p>
+                        <p class="pp">компании</p>
                     </div>
                     <div class="home-text-icons">
                         <i class="bi bi-house-heart"></i>
-                        <p>Онлайн оформление</p>
-                        <p>полиса ОСАГО</p>
+                        <p class="pp2">Онлайн оформление</p>
+                        <p class="pp3">полиса ОСАГО</p>
                     </div>
                     <div class="home-text-icons">
                         <i class="bi bi-coin"></i>
-                        <p>Точный расчет</p>
-                        <p>цены ОСАГО</p>
+                        <p class="pp4">Точный расчет</p>
+                        <p class="pp5">цены ОСАГО</p>
                     </div>
                     <div class="home-text-icons">
                         <i class="bi bi-person-check-fill"></i>
-                        <p>Безупречный</p>
-                        <p>сервис</p>
+                        <p class="pp6">Безупречный</p>
+                        <p class="pp7">сервис</p>
                     </div>
                     <div class="home-text-icons">
                         <i class="bi bi-tags"></i>
-                        <p>Доступны все каналы</p>
-                        <p>связи</p>
+                        <p class="pp8">Доступны все каналы</p>
+                        <p class="pp9">связи</p>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                         <p>Страховая компания Брянска по ОСАГО "Чайка" - это ваш надёжный партнёр и помощник. За годы своей работы мы успели заслужить доверие клиентов, оказав профессиональную поддержку в решении трудностей после аварии. Мы предоставляем широкий спектр услуг и готовы предложить вам действительно выгодные условия сотрудничества, а также дадим информацию о том, сколько стоит автострахование! Узнать более детально о том, что нужно для страхования, наши адреса и цены на автострахование в Брянске вы можете у специалистов нашей компании по телефону или на личной встрече.</p>
                     </div>
                 </div>
-                <div class="home-text-cards">
+                <div class="home-text-cards2">
                     <div class="home-text-cards-img">
                         <img src="../img/street.jpg" alt="">
                     </div>
@@ -140,17 +140,34 @@
         document.querySelector("body").style="background-color: #363d4e;"
         
       }else{
+        document.querySelector(".home-text-cards").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+        document.querySelector(".home-text-cards2").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
         document.querySelector("body").style="background-color: #F9FAFB;"
         document.querySelector(".for_main_navbar").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
         document.querySelector(".home-text-box").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
-        document.querySelector(".home-text-cards").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
         document.querySelector(".home-text-big").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
         document.querySelector(".home-header").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
         document.querySelector(".home-header2").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+      }
+
+      if (localStorage.getItem("back_style")=="sun") {
+        document.querySelector("body").style="background-color: #363d4e;"
+        
+      }else{
+        document.querySelector(".home-t-box-h01").style="color: #2E3038;";
+        document.querySelector(".home-box-h1").style="color: #2E3038;";
+        document.querySelector(".pp").style="color: #2E3038;";
+        document.querySelector(".pp2").style="color: #2E3038;";
+        document.querySelector(".pp3").style="color: #2E3038;";
+        document.querySelector(".pp4").style="color: #2E3038;";
+        document.querySelector(".pp5").style="color: #2E3038;";
+        document.querySelector(".pp6").style="color: #2E3038;";
+        document.querySelector(".pp7").style="color: #2E3038;";
+        document.querySelector(".pp8").style="color: #2E3038;";
+        document.querySelector(".pp9").style="color: #2E3038;";
+        document.querySelector("li").style="color: #2E3038;";
         document.querySelector("h1").style="color: #2E3038;";
         document.querySelector("p").style="color: #2E3038;";
-        document.querySelector("span").style="color: #2E3038;";
-        document.querySelector("ul li").style="color: #2E3038;";
       }
     </script>
 </body>

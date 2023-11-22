@@ -117,7 +117,8 @@ body {
     margin-bottom: 1rem;
 }
 
-.home-text-cards {
+.home-text-cards,
+.home-text-cards2 {
     width: 450px;
     background: #363d4e;
     padding: 1rem 1rem;
