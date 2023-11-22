@@ -90,7 +90,7 @@ a{
   }
   
   /* .switch:hover */.sun svg {
-    animation: rotate 15s linear infinite;
+    animation: rotate 4s linear infinite;
   }
   
   @keyframes rotate {
@@ -105,7 +105,7 @@ a{
   }
   
   /* .switch:hover */.moon svg {
-    animation: tilt 5s linear infinite;
+    animation: tilt 0.7s linear infinite;
   }
   
   @keyframes tilt {
