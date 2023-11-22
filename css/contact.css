@@ -15,6 +15,10 @@
     margin-bottom: 5%;
 }
 
+body {
+    background: #363d4e;
+}
+
 .cont-header {
     width: 100%;
     max-width: 1500px;
@@ -511,7 +515,8 @@
 
 .cont-inputs-left,
 .cont-inputs-right {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     display: block;
 }
 
@@ -893,11 +898,21 @@
     }
 }
 @media (max-width:850px) {
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width:600px) {
     .cont-input-box {
         display: none;
+    }
+
+    .cont-main-end {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .cont-med-big .cont-med-big-h02 {
@@ -1033,4 +1048,228 @@
 }
 
 @media (max-width:420px) {
+    .cont-need-item-text p {
+        width: 100%;
+        max-width: 671px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 30px;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+    }
+
+    .cont-input-sect-h01 h1 {
+        color: #3fb3ff;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .cont-input-sect-h01 p {
+        color: #fff;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 3rem;
+    }
+
+    .cont-main-footer h1 {
+        color: #ffffff;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .cont-main-end-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border: 2px solid #3fb3ff;
+        background-color: #363d4e;
+        border-radius: 50%;
+        transition: .2s linear;
+        margin: 2rem;
+    }
+
+    .cont-main-end-cards, .cont-main-end-cards2, .cont-main-end-cards3, .cont-main-end-cards4, img {
+        width: 100%;
+        filter: brightness(89%) saturate(155%);
+        opacity: 0.5;
+    }
+    
+    .cont-med-left {
+        max-width: 330px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .cont-med-right p {
+        width: 100%;
+        max-width: 815px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 39.96px;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+    }
+
+    .footer-end p {
+        color: #fff;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .cont-input-section {
+        width: 100%;
+        max-width: 1500px;
+        background: #222222;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        padding: 2rem 1rem;
+        -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .cont-header-right-p {
+        color: #fff;
+        font-size: 12px;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-weight: 600;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .cont-header-right {
+        display: block;
+        width: 100%;
+        max-width: 1500px;
+        min-height: 577px;
+        border-radius: 20px;
+        background: rgba(55, 55, 55, 0.8);
+        padding: 1rem;
+        text-shadow: -1px 0 2px rgba(0, 0, 0, 0.26);
+        -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+
+    .cont-header {
+        width: 100%;
+        max-width: 1500px;
+        padding: 3rem 0;
+        background-color: #222222;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        margin: auto;
+        -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+
+    .cont-header-left h1 {
+        font-size: 25px;
+        color: #fff;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        margin-bottom: 0.5rem;
+    }
+
+    .cont-header-left h4 {
+        color: #3fb3ff;
+        font-size: 20px;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-weight: 400;
+    }
+
+    .cont-main-end {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cont-header-left .cont-header-left-h06 {
+        color: #3fb3ff;
+        font-size: 12px;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-weight: 400;
+    }
+
+    .cycle {
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .cont-med-big {
+        width: 100%;
+        max-width: 1500px;
+        padding: 2rem 0;
+        background-color: #222222;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        margin-top: 4% !important;
+        margin: auto;
+        text-shadow: -1px 0 2px rgba(0, 0, 0, 0.26);
+        -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+
+    .cont-med-big .cont-med-big-h01 {
+        color: #3fb3ff;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .cont-med-big .cont-med-big-h02 {
+        color: #3fb3ff;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .footer-top {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-top-links4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-top-links2 .footer-btn {
+        width: 100%;
+        max-width: 250px;
+        padding: 0 3rem;
+        height: 55px;
+        border-radius: 30px;
+        border: 1px solid #3fb3ff;
+        color: #fff;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        background: transparent;
+        cursor: pointer;
+        transition: all .4s ease;
+        margin-bottom: 1rem;
+    }
+
+    .footer-med p {
+        color: #fff;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
 }
