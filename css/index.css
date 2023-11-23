@@ -12,9 +12,9 @@ body{
     align-items: center;
     list-style: none;
 }
-.index_main{
+/* .index_main{
     padding: 20px;
-}
+} */
 .index_header_card{
     background-color: #222222;
     max-width: 1500px;
@@ -79,9 +79,88 @@ body{
     color: #3fb3ff;
 }
 
+.index_main_med {
+    width: 100%;
+    max-width: 1500px;
+    padding: 3rem 2rem;
+    background: #222222;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
+.index_main_h01 h1 {
+    text-align: center;
+    color: #fff;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
 
+.index_main_box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
+.index_main_cards1,
+.index_main_cards2,
+.index_main_cards3 {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    background: #363d4e;
+    padding: 1rem 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: all .4s ease;
+    border: 1px solid #555555;
+}
+
+.index_main_cards3:hover {
+    border: 1px solid #555555;
+    background-color: #222222;
+}
+
+.index_main_cards2:hover {
+    border: 1px solid #555555;
+    background-color: #222222;
+}
+
+.index_main_cards1:hover {
+    border: 1px solid #555555;
+    background-color: #222222;
+}
+
+.index_main_cards1 h5 {
+    color: #3fb3ff;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.index_main_cards2 h5 {
+    color: #3fb3ff;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+.index_main_cards3 h5 {
+    color: #3fb3ff;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.index_main_cards3 p {
+    color: #fff;
+}
+
+.index_main_cards2 p {
+    color: #fff;
+}
+.index_main_cards1 p {
+    color: #fff;
+}
 
 
 
@@ -95,7 +174,35 @@ body{
         gap: 31px;
     }
 }
+
+@media (max-width:900px) {
+    .index_main_box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .index_main_cards1, .index_main_cards2, .index_main_cards3 {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 20px;
+        background: #363d4e;
+        padding: 1rem 1rem;
+        margin: 0.3rem;
+    }
+}
+
 @media(max-width:800px){
+    .index_header_bottom_card{
+        width: 100%;
+    }
+
+    .index_header_bottom_cards{
+        justify-content: center;
+        gap: 20px;
+    }
+
     .index_header_bottom_card{
         width: 48%;
     }
@@ -103,7 +210,169 @@ body{
         justify-content: center;
         gap: 20px;
     }
+
+    .index_main_box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .index_main_cards1 h5 {
+        color: #3fb3ff;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .index_main_cards2 h5 {
+        color: #3fb3ff;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .index_main_cards3 h5 {
+        color: #3fb3ff;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .index_main_cards1 p {
+        color: #ffff;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .index_main_cards2 p {
+        color: #ffff;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .index_main_cards3 p {
+        color: #ffff;
+        text-align: center;
+        font-size: 12px;
+    }
 }
+
+@media (max-width:600px) {
+    .index_main_box {
+        display: block;
+    }
+
+    .index_main_cards1, .index_main_cards2, .index_main_cards3 {
+        display: block;
+        width: 100%;
+        max-width: none;
+        border-radius: 20px;
+        background: #363d4e;
+        padding: 1rem 1rem;
+        margin: 0.3rem;
+    }
+
+    .index_main_cards1 h5 {
+        color: #3fb3ff;
+        font-size: 25px;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    .index_main_cards2 h5 {
+        color: #3fb3ff;
+        font-size: 25px;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    .index_main_cards3 h5 {
+        color: #3fb3ff;
+        font-size: 25px;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .index_main_cards1 p {
+        color: #ffff;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .index_main_cards2 p {
+        color: #ffff;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .index_main_cards3 p {
+        color: #ffff;
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:420px) {
+    .index_main_cards1, .index_main_cards2, .index_main_cards3 {
+        display: block;
+        width: 100%;
+        max-width: none;
+        border-radius: 20px;
+        background: #363d4e;
+        padding: 1rem 1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .index_main_med {
+        width: 100%;
+        max-width: 1500px;
+        padding: 2rem 1rem;
+        background: #222222;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .index_main_cards1 h5 {
+        color: #3fb3ff;
+        font-size: 18px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+    .index_main_cards2 h5 {
+        color: #3fb3ff;
+        font-size: 18px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .index_main_cards3 h5 {
+        color: #3fb3ff;
+        font-size: 18px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .index_main_cards1 p {
+        color: #ffff;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .index_main_cards2 p {
+        color: #ffff;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .index_main_cards3 p {
+        color: #ffff;
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
 @media(max-width:800px){
     .index_header_bottom_card{
         width: 100%;
