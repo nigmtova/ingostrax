@@ -138,3 +138,10 @@ a{
   .input:checked + .slider:before {
     transform: translateX(30px);
   }
+
+
+  @media (max-width:850px) {
+    .for_main_navbar ul {
+      display: none;
+    }
+  }
