@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
+
+:root {
+    --bg-color:#363d4e;
+    --text-color:#a2a2a2;
+    --border-color:#555555;
+    --blue-color:#3fb3ff;
+    --card-color: #222222;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.narx_container {
+    width: 100%;
+}
+
+.narx_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--card-color);
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.narx_left {
+    width: 40%;
+    color: #fff;
+}
+
+.narx_left h1 {
+    margin-bottom: 1rem;
+    color: var(--blue-color);
+}
+
+.narx_two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.narx_left-inLeft ol {
+    padding-left: 1rem;
+}
+
+.narx_left-inLeft ol li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.narx_right-inRight p {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.narx_right-inRight p:hover {
+    color: var(--blue-color);
+}
+
+.narx_nazv {
+    display: flex;
+}
+
+.narx_nazv p {
+    padding-left: 1rem;
+} 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contact2.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/avto.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -136,34 +136,6 @@
                     <li>Представительство в суде (исковые заявления, жалобы, претензии).</li>
                 </ul>
                 <h3 class="h03">Номер телефона: <span>+7(930)-820-45-01</span> <span>+7(4832)-30-45-01</span></h3>
-                <h1 class="home-t-box-h01">Наши преимущества</h1>
-                <div class="home-text-box-icon">
-                    <div class="home-text-icons">
-                        <i class="bi bi-car-front-fill"></i>
-                        <p class="pp">Полис ОСАГО надежной страховой</p>
-                        <p class="pp">компании</p>
-                    </div>
-                    <div class="home-text-icons">
-                        <i class="bi bi-house-heart"></i>
-                        <p class="pp2">Онлайн оформление</p>
-                        <p class="pp3">полиса ОСАГО</p>
-                    </div>
-                    <div class="home-text-icons">
-                        <i class="bi bi-coin"></i>
-                        <p class="pp4">Точный расчет</p>
-                        <p class="pp5">цены ОСАГО</p>
-                    </div>
-                    <div class="home-text-icons">
-                        <i class="bi bi-person-check-fill"></i>
-                        <p class="pp6">Безупречный</p>
-                        <p class="pp7">сервис</p>
-                    </div>
-                    <div class="home-text-icons">
-                        <i class="bi bi-tags"></i>
-                        <p class="pp8">Доступны все каналы</p>
-                        <p class="pp9">связи</p>
-                    </div>
-                </div>
             </div>
             <div class="home-text-card">
                 <div class="home-text-cards">
@@ -184,7 +156,34 @@
                 </div>
             </div>
         </div>
-
+        <h1 class="home-t-box-h01">Наши преимущества</h1>
+        <div class="home-text-box-icon">
+            <div class="home-text-icons">
+                <i class="bi bi-car-front-fill"></i>
+                <p class="pp">Полис ОСАГО надежной страховой</p>
+                <p class="pp">компании</p>
+            </div>
+            <div class="home-text-icons">
+                <i class="bi bi-house-heart"></i>
+                <p class="pp2">Онлайн оформление</p>
+                <p class="pp3">полиса ОСАГО</p>
+            </div>
+            <div class="home-text-icons">
+                <i class="bi bi-coin"></i>
+                <p class="pp4">Точный расчет</p>
+                <p class="pp5">цены ОСАГО</p>
+            </div>
+            <div class="home-text-icons">
+                <i class="bi bi-person-check-fill"></i>
+                <p class="pp6">Безупречный</p>
+                <p class="pp7">сервис</p>
+            </div>
+            <div class="home-text-icons">
+                <i class="bi bi-tags"></i>
+                <p class="pp8">Доступны все каналы</p>
+                <p class="pp9">связи</p>
+            </div>
+        </div>
         <div class="footer">
             <div class="footer-top">
                 <div class="footer-top-links">
@@ -212,5 +211,54 @@
             </div>
         </div>
     </div>
+
+
+
+    <script>
+        function back_style1() {
+            document.querySelector("#checkbox2").checked?(localStorage.setItem("back_style", "sun")):(localStorage.setItem("back_style", "moon"));window.location.reload()
+        }
+        if (localStorage.getItem("back_style") !== "moon") {
+        document.querySelector("#checkbox2").checked = true;
+      } else {
+        document.querySelector("#checkbox2").checked = false;
+      }
+      if (localStorage.getItem("back_style")=="sun") {
+        document.querySelector("body").style="background-color: #363d4e;"
+        
+      }else{
+        document.querySelector("li").style="color: #2E3038;";
+        document.querySelector("h1").style="color: #2E3038;";
+        document.querySelector("p").style="color: #2E3038;";
+        document.querySelector(".home-text-cards").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+        document.querySelector(".home-text-cards2").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+        document.querySelector("body").style="background-color: #F9FAFB;"
+        document.querySelector(".for_main_navbar").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+        document.querySelector(".home-text-box").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+        document.querySelector(".home-text-big").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+        document.querySelector(".home-header").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+        document.querySelector(".home-header2").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+      }
+
+      if (localStorage.getItem("back_style")=="sun") {
+        document.querySelector("body").style="background-color: #363d4e;"
+        
+      }else{
+        document.querySelector("li").style="color: #2E3038;";
+        document.querySelector("h1").style="color: #2E3038;";
+        document.querySelector("p").style="color: #2E3038;";
+        document.querySelector(".home-t-box-h01").style="color: #2E3038;";
+        document.querySelector(".home-box-h1").style="color: #2E3038;";
+        document.querySelector(".pp").style="color: #2E3038;";
+        document.querySelector(".pp2").style="color: #2E3038;";
+        document.querySelector(".pp3").style="color: #2E3038;";
+        document.querySelector(".pp4").style="color: #2E3038;";
+        document.querySelector(".pp5").style="color: #2E3038;";
+        document.querySelector(".pp6").style="color: #2E3038;";
+        document.querySelector(".pp7").style="color: #2E3038;";
+        document.querySelector(".pp8").style="color: #2E3038;";
+        document.querySelector(".pp9").style="color: #2E3038;";
+      }
+    </script>
 </body>
 </html>

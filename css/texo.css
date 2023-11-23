@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+}
+
+.texno_container {
+    width: 100%;
+}
+
+.texno_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    padding: 3rem 2rem;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    background: #222222;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.texno_left {
+    color: #ffffff;
+}
+
+.texno_left h1 {
+    color: #3fb3ff;
+    margin-bottom: 1rem;
+}
+
+.texno_left p {
+    margin-bottom: 1rem;
+}
+
+.texno_left p a {
+    color: #3fb3ff;
+}
+
+.texno_left p a:hover {
+    text-decoration: underline;
+}
+
+.texno_left span {
+    color: #3fb3ff;
+    cursor: pointer;
+}
+
+.texno_left span:hover {
+    text-decoration: underline;
+}
+
+.texno_header2 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .texno_header {
+        display: none;
+    }
+
+    .texno_header2 {
+        display: block;
+        width: 100%;
+        max-width: 1500px;
+        padding: 3rem 2rem;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        background: #222222;
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .texno_left p {
+        margin-bottom: 1rem;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .texno_right img {
+        width: 100%;
+    }
+
+    .texno_left p {
+        margin-bottom: 1rem;
+        font-size: 13px;
+    }
+
+    .texno_left h1 {
+        color: #3fb3ff;
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .texno_right img {
+        width: 100%;
+    }
+
+    .texno_left p {
+        margin-bottom: 1rem;
+        font-size: 13px;
+    }
+    
+    .texno_left h1 {
+        color: #3fb3ff;
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+
+    .texno_header2 {
+        display: block;
+        width: 100%;
+        max-width: 1500px;
+        padding: 1.5rem 1rem;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        background: #222222;
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}

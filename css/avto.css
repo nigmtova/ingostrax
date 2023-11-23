@@ -96,7 +96,7 @@ body {
 }
 
 .home-text-big {
-    display: flex;
+    display: block;
     width: 100%;
     max-width: 1500px;
     padding: 1rem 2rem;
@@ -108,7 +108,8 @@ body {
 }
 
 .home-text-card {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .home-text-cards-img img {
@@ -120,7 +121,8 @@ body {
 
 .home-text-cards,
 .home-text-cards2 {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;;
     background: #363d4e;
     padding: 1rem 1rem;
     border-radius: 20px;
@@ -282,16 +284,34 @@ body {
         display: block;
     }
 
-    .home-text-cards {
-        width: 100%;
-        max-width: fit-content;
+    .home-text-cards, .home-text-cards2 {
+        width: 95%;
+        max-width: none;
         background: #363d4e;
         padding: 1rem 1rem;
         border-radius: 20px;
         border: 1px solid #555555;
         cursor: pointer;
         transition: all 0.3s ease;
-        margin: 1rem;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .home-text-icons p {
+        line-height: 1.46;
+        color: #a2a2a2;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+    }
+
+    .home-text-icons {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 0.5rem;
+        text-align: center;
+        padding: 0.7rem;
     }
 
     .home-text-icons {
@@ -319,6 +339,7 @@ body {
     }
 
     .home-header2 {
+        margin-top: 5%;
         margin-bottom: 2rem;
     }
 }
@@ -347,9 +368,10 @@ body {
         max-width: 250px;
     } 
 
-    .home-text-cards {
+    .home-text-cards,
+    .home-text-cards2 {
         width: 100%;
-        /* max-width: fit-content; */
+        max-width: fit-content;
         background: #363d4e;
         padding: 1rem 1rem;
         border-radius: 20px;
@@ -371,5 +393,25 @@ body {
 
     .home-text-box {
         margin: 1rem;
+    }
+
+    .home-t-box-h01 {
+        text-align: center;
+        margin-top: 10%;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #fff;
+    }
+}
+
+@media (max-width:380px) {
+    .home-t-box-h01 {
+        text-align: center;
+        margin-top: 10%;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #fff;
     }
 }
