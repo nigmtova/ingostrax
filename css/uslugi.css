@@ -21,10 +21,13 @@
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .uslug_left {
-    color: #fff;
+    color: #a2a2a2;
 }
 
 .uslug_left h1 {
@@ -57,3 +60,79 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+@media (max-width:900px) {
+    .uslugi_header {
+        display: block;
+        width: 100%;
+        max-width: 1500px;
+        padding: 3rem 2rem;
+        background: #222222;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .uslug_right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .uslug_right img {
+        width: 70%;
+    }
+}
+
+@media (max-width:600px) {
+    .uslug_left p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .uslug_left h1 {
+        color: #3fb3ff;
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+
+    .uslug_right img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .uslug_left h1 {
+        color: #3fb3ff;
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

@@ -11,14 +11,14 @@
     align-items: center;
     width: 100%;
     max-width: 1500px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #a2a2a2;
     padding-top: 3rem;
     padding-bottom: 5rem;
     margin: auto;
 }
 
 .footer-top-links p a {
-    color: #fff;
+    color: #a2a2a2;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     font-weight: 500;
     transition: all .5s ease;
@@ -37,7 +37,7 @@
 }
 
 .footer-top-links2 p a {
-    color: #fff;
+    color: #a2a2a2;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     font-weight: 500;
 }
@@ -102,12 +102,12 @@
     width: 100%;
     max-width: 1500px;
     margin: auto;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #a2a2a2;
     padding-top: 2rem;
 }
 
 .footer-med p {
-    color: #fff;
+    color: #a2a2a2;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -122,7 +122,7 @@
 }
 
 .footer-end p {
-    color: #fff;
+    color: #a2a2a2;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     font-size: 20px;
     font-weight: 400;

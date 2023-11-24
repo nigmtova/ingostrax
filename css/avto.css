@@ -5,6 +5,7 @@
     text-decoration: none;
     outline: none;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+    /* color: #fff; */
 }
 
 *, *:before, *:after {
@@ -30,6 +31,9 @@ body {
     border: 1px solid #555555;
     margin-top: 5%;
     margin-bottom: 5%;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .home-header2 {
@@ -64,7 +68,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.home-header-left-text p span {
+.home-header-left-text p a {
     color: #a2a2a2;
     cursor: pointer;
     font-weight: 600;
@@ -73,7 +77,7 @@ body {
     transition: 0.2s ease;
 }
 
-.home-header-left-text p span:hover {
+.home-header-left-text p a:hover {
     color: #3fb3ff;
     border-bottom: 1px solid #3fb3ff;
 }
@@ -103,6 +107,9 @@ body {
     background-color: #222222;
     border-radius: 20px;
     border: 1px solid #555555;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
     margin: auto;
     margin-bottom: 5%;
 }
@@ -120,7 +127,8 @@ body {
 }
 
 .home-text-cards,
-.home-text-cards2 {
+.home-text-cards2,
+.home-text-cards3 {
     width: 100%;
     max-width: 450px;;
     background: #363d4e;
@@ -130,6 +138,9 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 1rem;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .home-text-cards2:hover {
@@ -140,12 +151,29 @@ body {
     background: #222222;
 }
 
+.home-text-cards3:hover {
+    background: #222222;
+}
+
 .home-text-cards-p p {
     line-height: 1.46;
     color: #a2a2a2;
     font-weight: 400;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
 } 
+
+.home-text-cards-p p:hover {
+    color: #a2a2a2;
+}
+
+.home-text-cards-p2 p:hover {
+    color: #a2a2a2;
+}
+
+.home-text-cards-p3 p:hover {
+    color: #a2a2a2;
+}
+
 
 .home-text-box {
     margin: 1rem;
@@ -155,17 +183,21 @@ body {
     border: 1px solid #555555;
     cursor: pointer;
     transition: all 0.3s ease;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .home-text-box:hover {
     background: #222222;
+    color: #a2a2a2;
 }
 
 .home-text-box .home-box-h1 {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #fff;
+    color: #3fb3ff;
 }
 
 .home-text-box .home-text-box-p {
@@ -209,7 +241,7 @@ body {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #fff;
+    color: #a2a2a2;
 }
 
 .home-text-icons i {
@@ -259,6 +291,30 @@ body {
         transition: all 0.3s ease;
         margin: 1rem;
     }
+
+    .home-text-cards2 {
+        width: 100%;
+        max-width: 450px;
+        background: #363d4e;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 1rem;
+    }
+
+    .home-text-cards3 {
+        width: 100%;
+        max-width: 450px;
+        background: #363d4e;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #555555;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 1rem;
+    }
     
     .home-text-cards-p p {
         line-height: 1.46;
@@ -284,7 +340,7 @@ body {
         display: block;
     }
 
-    .home-text-cards, .home-text-cards2 {
+    .home-text-cards, .home-text-cards2, .home-text-cards3 {
         width: 95%;
         max-width: none;
         background: #363d4e;
@@ -369,7 +425,8 @@ body {
     } 
 
     .home-text-cards,
-    .home-text-cards2 {
+    .home-text-cards2,
+    .home-text-cards3 {
         width: 100%;
         max-width: fit-content;
         background: #363d4e;

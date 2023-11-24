@@ -160,6 +160,9 @@ body {
     background: #222222;
     margin: auto;
     display: block;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .con_main_min_card {
@@ -168,7 +171,8 @@ body {
     margin-top: 3%;
 }
 
-.con_main_min_cards {
+.con_main_min_cards,
+.con_main_min_cards2 {
     width: 100%;
     max-width: 550px;
     border: 1px solid #555555;
@@ -176,6 +180,9 @@ body {
     background-color: #363d4e;
     transition: all .4s ease;
     display: block;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .con_min_text {
@@ -217,6 +224,17 @@ body {
 }
 
 .con_main_min_cards img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.con_main_min_cards2:hover {
+    background: #222222;
+    cursor: pointer;
+}
+
+.con_main_min_cards2 img {
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -309,6 +327,17 @@ body {
         margin: 0.5rem;
     }
 
+    .con_main_min_cards2 {
+        width: 100%;
+        max-width: 550px;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        background-color: #363d4e;
+        transition: all .4s ease;
+        display: block;
+        margin: 0.5rem;
+    }
+
     .con_min_text ul li {
         color: #a2a2a2;
         line-height: 1.7;
@@ -371,6 +400,17 @@ body {
 
 @media (max-width:600px) {
     .con_main_min_cards {
+        width: 100%;
+        max-width: 550px;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        background-color: #363d4e;
+        transition: all .4s ease;
+        display: block;
+        margin: 0.5rem;
+    }
+
+    .con_main_min_cards2 {
         width: 100%;
         max-width: 550px;
         border: 1px solid #555555;

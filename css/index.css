@@ -26,6 +26,11 @@ body{
     padding-top: 80px !important;
     padding-bottom: 80px !important;
     transition: 0.5s;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 .index_header_bottom_cards{
     max-width: 1500px;
@@ -49,6 +54,10 @@ body{
     color: white;
     cursor: pointer;
     transition: 0.5s;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom: 5%;
 }
 .index_header_bottom_card h2{
     font-weight: 400;
@@ -86,6 +95,10 @@ body{
     background: #222222;
     border: 1px solid #555555;
     border-radius: 20px;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom: 5%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -93,7 +106,7 @@ body{
 
 .index_main_h01 h1 {
     text-align: center;
-    color: #fff;
+    color: #4e4d4d;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
 }
 
@@ -117,6 +130,10 @@ body{
     cursor: pointer;
     transition: all .4s ease;
     border: 1px solid #555555;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom: 5%;
 }
 
 .index_main_cards3:hover {
@@ -152,14 +169,14 @@ body{
 }
 
 .index_main_cards3 p {
-    color: #fff;
+    color: #4e4d4d;
 }
 
 .index_main_cards2 p {
-    color: #fff;
+    color: #4e4d4d;
 }
 .index_main_cards1 p {
-    color: #fff;
+    color: #4e4d4d;
 }
 
 

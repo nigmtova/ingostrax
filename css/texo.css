@@ -18,6 +18,9 @@
     padding: 3rem 2rem;
     border: 1px solid #555555;
     border-radius: 20px;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
     background: #222222;
     margin: auto;
     margin-bottom: 5%;
@@ -25,7 +28,7 @@
 }
 
 .texno_left {
-    color: #ffffff;
+    color: #a2a2a2;
 }
 
 .texno_left h1 {
@@ -86,6 +89,11 @@
     .texno_left p {
         margin-bottom: 1rem;
         font-size: 15px;
+    }
+
+    .texno_right {
+        display: flex;
+        justify-content: center;
     }
 }
 

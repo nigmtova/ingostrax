@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.merzo_header {
+    width: 100%;
+    max-width: 1500px;
+    padding: 3rem 2rem;
+    background: #222222;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.merzo-right {
+    width: 40%;
+    color: #a2a2a2;
+}
+
+.merzo-left {
+    width: 50%;
+    color: #a2a2a2;
+}
+
+.merzo-left h1 {
+    color: #3fb3ff;
+    margin-bottom: 1rem;
+}
+
+.merzo-left p {
+    line-height: 1.60;
+    margin-bottom: 1rem;
+}
+
+.merzo-right p {
+    line-height: 1.60;
+}
+
+.merzo-right p a {
+    color: #3fb3ff;
+}
+
+.merzo-right p a:hover {
+    text-decoration: underline;
+}
+
+.merzo-left ul {
+    padding-left: 1rem;
+}
+
+.merzo-left ul li {
+    line-height: 1.7;
+}
+
+
+
+
+@media (max-width:900px) {
+    .merzo_header {
+        width: 100%;
+        max-width: 1500px;
+        padding: 3rem 2rem;
+        background: #222222;
+        border: 1px solid #555555;
+        border-radius: 20px;
+        display: block;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .merzo-left {
+        width: 100%;
+        color: #a2a2a2;
+        margin-bottom: 2rem;
+    }
+
+    .merzo-right {
+        width: 100%;
+        color: #a2a2a2;
+    }
+}
+
+@media (max-width: 420px) {
+    .merzo-left h1 {
+        color: #3fb3ff;
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+}

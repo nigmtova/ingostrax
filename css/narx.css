@@ -31,6 +31,9 @@ body {
     border-radius: 20px;
     border: 1px solid var(--border-color);
     background: var(--card-color);
+    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -38,7 +41,7 @@ body {
 
 .narx_left {
     width: 40%;
-    color: #fff;
+    color: #a2a2a2;
 }
 
 .narx_left h1 {
