@@ -20,8 +20,26 @@
   <body>
     <div class="con_container">
       <div class="for_main_navbar">
-        <img style="width: 60px" src="../img/seagull-logo.png" alt="" />
-        <ul>
+        <i onclick="menu_left()" class='bx bx-menu-alt-left'></i>
+        <div class="navbar_left">
+          <div class="for_rigth_icon_x">
+          <i onclick="rigth_icon()" class='bx bx-x' ></i>
+        </div>
+        <ul class="back_ul">
+          <img style="width: 75px" src="../img/seagull-logo.png" alt="" />
+            <li><a href="../html/index.html">Главная</a></li>
+            <li>
+              <a onmouseup="avto()" href="../html/avto.html">Автострахование</a>
+            </li>
+            <li><a href="../html/uslugi.html">Услуги МРЕО</a></li>
+            <li><a href="../html/texno.html">Техосмотр</a></li>
+            <li><a href="../html/narx.html">Цены</a></li>
+            <li><a href="../html/contact.html">Замена гос номера РФ</a></li>
+            <li><a href="../html/contact2.html">Контакты</a></li>
+          </ul>
+        </div>
+        <img style="width: 75px" src="../img/seagull-logo.png" alt="" />
+        <ul class="front_ul">
           <li><a href="../html/index.html">Главная</a></li>
           <li>
             <a onmouseup="avto()" href="../html/avto.html">Автострахование</a>
@@ -406,6 +424,12 @@
           "background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
         document.querySelector(".con_main").style =
           "background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
+      }
+      function menu_left() {
+        document.querySelector(".navbar_left").style="left: 0;"
+      }
+      function rigth_icon() {
+        document.querySelector(".navbar_left").style="left: -400px;"
       }
     </script>
   </body>

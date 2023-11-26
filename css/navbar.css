@@ -361,6 +361,7 @@ a{
     transition: 1s;
     border: 1px solid #555555;
     padding: 15px;
+    z-index: 111;
   }
   .bx-x{
     font-size: 30px;
@@ -371,6 +372,12 @@ a{
   }
 
 
+
+  @media(max-width:400px){
+    .navbar_left{
+      width: 100%;
+    }
+  }
   @media (max-width:1100px) {
     .front_ul {
       display: none;
