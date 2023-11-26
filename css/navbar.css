@@ -2,7 +2,7 @@ a{
   text-decoration: none;
   color: #a2a2a2;
 }
-.for_main_navbar ul{
+.front_ul{
   display: flex;
   align-items: center;
   list-style: none;
@@ -11,10 +11,13 @@ a{
   font-weight: 600;
   font-size: 15px;
 }
-.for_main_navbar ul li{
+.front_ul li{
   cursor: pointer;
 }
-
+.back_ul{
+  list-style: none;
+  line-height: 40px;
+}
 .for_main_navbar{
   margin-top: 30px !important;
   background-color: #222222;
@@ -25,7 +28,7 @@ a{
   max-width: 1500px;
   width: 100%;
   margin: auto;
-  height: 70px;
+  height: 85px;
   border-radius: 20px;
   border: 1px solid #555555;
   padding: 0 30px;
@@ -142,14 +145,6 @@ a{
   .input:checked + .slider:before {
     transform: translateX(30px);
   }
-
-
-  @media (max-width:850px) {
-    .for_main_navbar ul {
-      display: none;
-    }
-  }
-
 .theme-switch {
     --toggle-size: 12px;
     /* the size is adjusted using font-size,
@@ -351,4 +346,41 @@ a{
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+  .bx-menu-alt-left{
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .navbar_left{
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    background-color: #222222;
+    transition: 1s;
+    border: 1px solid #555555;
+    padding: 15px;
+  }
+  .bx-x{
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .for_rigth_icon_x{
+    text-align: right;
+  }
+
+
+  @media (max-width:1100px) {
+    .front_ul {
+      display: none;
+    }
+  }
+  @media(min-width:1101px){
+    .navbar_left{
+      left: -400px;
+    }
+    .bx-menu-alt-left{
+      display: none !important; 
+    }
   }

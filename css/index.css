@@ -7,14 +7,9 @@
 body{
     background-color: #363d4e;
 }
-.for_main_navbar ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
+.index_main{
+    padding: 15px;
 }
-/* .index_main{
-    padding: 20px;
-} */
 .index_header_card{
     background-color: #222222;
     max-width: 1500px;

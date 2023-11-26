@@ -138,7 +138,7 @@
         function back_style1() {
             document.querySelector("#checkbox2").checked?(localStorage.setItem("back_style", "sun")):(localStorage.setItem("back_style", "moon"));window.location.reload()
         }
-        if (localStorage.getItem("back_style") !== "moon") {
+        if (localStorage.getItem("back_style") == "sun") {
         document.querySelector("#checkbox2").checked = true;
       } else {
         document.querySelector("#checkbox2").checked = false;
