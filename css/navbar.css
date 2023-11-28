@@ -11,6 +11,9 @@ a{
   font-weight: 600;
   font-size: 15px;
 }
+.for_main_navbar img{
+  cursor: pointer;
+}
 .front_ul li{
   cursor: pointer;
 }

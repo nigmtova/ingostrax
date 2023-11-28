@@ -27,7 +27,7 @@
           <i onclick="rigth_icon()" class='bx bx-x' ></i>
         </div>
         <ul class="back_ul">
-          <img style="width: 75px" src="../img/seagull-logo.png" alt="" />
+          <a href="../html/index.html"><img style="width: 75px" src="../img/seagull-logo.png" alt="" /></a>
             <li><a href="../html/index.html">Главная</a></li>
             <li>
               <a onmouseup="avto()" href="../html/avto.html">Автострахование</a>
@@ -39,7 +39,7 @@
             <li><a href="../html/contact2.html">Контакты</a></li>
           </ul>
         </div>
-        <img style="width: 75px" src="../img/seagull-logo.png" alt="" />
+        <a href="../html/index.html"><img style="width: 75px" src="../img/seagull-logo.png" alt="" /></a>
         <ul class="front_ul">
           <li><a href="../html/index.html">Главная</a></li>
           <li>
@@ -282,65 +282,137 @@
       }
 
       function index_header() {
-        document.querySelector("#index_header_bottom_card").style =
-          "color: #3fb3ff";
+        if (localStorage.getItem("back_style") == "sun") {
+          document.querySelector("#index_header_bottom_card").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: #3fb3ff";
         document.querySelector("#index_header_bottom_card1").style =
-          "color: #fff";
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
         document.querySelector("#index_header_bottom_card2").style =
-          "color: #fff";
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
         document.querySelector("#index_header_bottom_card3").style =
-          "color: #fff";
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
         document.querySelector(
           ".index_header_card"
         ).innerHTML = `<h2>Зачем оформлять ОСАГО?</h2>
             <p>В соответствии с Федеральным законом «Об ОСАГО» наличие полиса автострахования ОСАГО является обязательным для всех автовладельцев. При покупке транспортного средства владелец обязан заключить договор ОСАГО, так как управление автомобилем без действующего полиса запрещено. За отсутствие страховки автовладельцу грозят штрафные санкции.</p>
             <p>Наличие данного полиса является гарантией возмещения ущерба, нанесенного транспортным средством, всем пострадавшим в дорожно-транспортном происшествии. Причем возмещением убытков будет заниматься не лично владелец авто, признанный виноватым в аварии, а страховая компания, с которой заключен договор автострахования.</p>`;
-      }
-      function index_header1() {
+      
+        }else{
+           document.querySelector("#index_header_bottom_card").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: #3fb3ff";
         document.querySelector("#index_header_bottom_card1").style =
-          "color: #3fb3ff";
-        document.querySelector("#index_header_bottom_card").style =
-          "color: #fff";
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
         document.querySelector("#index_header_bottom_card2").style =
-          "color: #fff";
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
         document.querySelector("#index_header_bottom_card3").style =
-          "color: #fff";
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector(
+          ".index_header_card"
+        ).innerHTML = `<h2>Зачем оформлять ОСАГО?</h2>
+            <p>В соответствии с Федеральным законом «Об ОСАГО» наличие полиса автострахования ОСАГО является обязательным для всех автовладельцев. При покупке транспортного средства владелец обязан заключить договор ОСАГО, так как управление автомобилем без действующего полиса запрещено. За отсутствие страховки автовладельцу грозят штрафные санкции.</p>
+            <p>Наличие данного полиса является гарантией возмещения ущерба, нанесенного транспортным средством, всем пострадавшим в дорожно-транспортном происшествии. Причем возмещением убытков будет заниматься не лично владелец авто, признанный виноватым в аварии, а страховая компания, с которой заключен договор автострахования.</p>`;
+      
+        }
+       }
+      function index_header1() {
+        if (localStorage.getItem("back_style") == "sun") {
+          document.querySelector("#index_header_bottom_card1").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: #3fb3ff";
+        document.querySelector("#index_header_bottom_card").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
+        document.querySelector("#index_header_bottom_card2").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
+        document.querySelector("#index_header_bottom_card3").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
         document.querySelector(
           ".index_header_card"
         ).innerHTML = `<h2>Что такое е-ОСАГО? Обязательно ли распечатывать полис?</h2>
             <p>Электронный полис ОСАГО – это тот же договор обязательного страхования автогражданской ответственности, только в виде электронного документа, который автовладелец, при желании, может самостоятельно распечатать на простой бумаге в черно-белом или цветном варианте.</p>
             <p>Бланки бумажных полисов оформляются в 2019 году исключительно розовыми, а e-ОСАГО может быть любого цвета: розового, голубого, зелёного и даже чёрно-белого. Требований к электронной версии полиса нет. Заверять электронный полис е-ОСАГО не нужно никак и нигде.</p>`;
-      }
-      function index_header2() {
-        document.querySelector("#index_header_bottom_card2").style =
-          "color: #3fb3ff";
+      
+        }else{
+          document.querySelector("#index_header_bottom_card1").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: #3fb3ff";
         document.querySelector("#index_header_bottom_card").style =
-          "color: #fff";
-        document.querySelector("#index_header_bottom_card1").style =
-          "color: #fff";
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector("#index_header_bottom_card2").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
         document.querySelector("#index_header_bottom_card3").style =
-          "color: #fff";
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector(
+          ".index_header_card"
+        ).innerHTML = `<h2>Что такое е-ОСАГО? Обязательно ли распечатывать полис?</h2>
+            <p>Электронный полис ОСАГО – это тот же договор обязательного страхования автогражданской ответственности, только в виде электронного документа, который автовладелец, при желании, может самостоятельно распечатать на простой бумаге в черно-белом или цветном варианте.</p>
+            <p>Бланки бумажных полисов оформляются в 2019 году исключительно розовыми, а e-ОСАГО может быть любого цвета: розового, голубого, зелёного и даже чёрно-белого. Требований к электронной версии полиса нет. Заверять электронный полис е-ОСАГО не нужно никак и нигде.</p>`;
+      
+        }
+        }
+      function index_header2() {
+        if (localStorage.getItem("back_style") == "sun") {
+          document.querySelector("#index_header_bottom_card2").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: #3fb3ff";
+        document.querySelector("#index_header_bottom_card").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
+        document.querySelector("#index_header_bottom_card1").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
+        document.querySelector("#index_header_bottom_card3").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
         document.querySelector(
           ".index_header_card"
         ).innerHTML = `<h2>От чего зависит стоимость ОСАГО?</h2>
             <p>Сумма платежа зависит от размера базовой ставки и коэффициентов.</p>
             <p>В соответствии с указанием Центробанка РФ 5515-У от 28.07.2020 установлен тарифный коридор — максимальные и минимальные значения базовой ставки ОСАГО, в пределах которых страховые компании определяют стоимость полисов. Сегодня максимальное значение базовой ставки не может превышать 5 436 рублей (для легковых автомобилей категории В, используемых физ. лицами).</p>`;
-      }
-      function index_header3() {
-        document.querySelector("#index_header_bottom_card3").style =
-          "color: #3fb3ff";
+      
+        }else{
+          document.querySelector("#index_header_bottom_card2").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: #3fb3ff";
         document.querySelector("#index_header_bottom_card").style =
-          "color: #fff";
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
         document.querySelector("#index_header_bottom_card1").style =
-          "color: #fff";
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector("#index_header_bottom_card3").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector(
+          ".index_header_card"
+        ).innerHTML = `<h2>От чего зависит стоимость ОСАГО?</h2>
+            <p>Сумма платежа зависит от размера базовой ставки и коэффициентов.</p>
+            <p>В соответствии с указанием Центробанка РФ 5515-У от 28.07.2020 установлен тарифный коридор — максимальные и минимальные значения базовой ставки ОСАГО, в пределах которых страховые компании определяют стоимость полисов. Сегодня максимальное значение базовой ставки не может превышать 5 436 рублей (для легковых автомобилей категории В, используемых физ. лицами).</p>`;
+      
+        }
+        }
+      function index_header3() {
+        if (localStorage.getItem("back_style") == "sun") {
+          document.querySelector("#index_header_bottom_card3").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: #3fb3ff";
+        document.querySelector("#index_header_bottom_card").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
+        document.querySelector("#index_header_bottom_card1").style =
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
         document.querySelector("#index_header_bottom_card2").style =
-          "color: #fff";
+          "background-color: #222222; border: 1px solid #F0F3F6;color: white";
         document.querySelector(
           ".index_header_card"
         ).innerHTML = `<h2>Какой полис ОСАГО стоит дешевле - электронный или оформленный у агента?</h2>
             <p>Стоимость полиса ОСАГО не зависит от способа его оформления - бумажный полис или электронный, на сайте страховой компании или через агрегатор. Цена везде будет одинаковая.</p>
             <p>Агрегатор даст Вам возможность сравнить стоимость полиса в разных страховых компаниях. Ваше время - бесценно!</p>`;
-      }
+      
+        }else{
+          document.querySelector("#index_header_bottom_card3").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: #3fb3ff";
+        document.querySelector("#index_header_bottom_card").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector("#index_header_bottom_card1").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector("#index_header_bottom_card2").style =
+          "background-color: #FFFFFF; border: 1px solid #F0F3F6;color: black";
+        document.querySelector(
+          ".index_header_card"
+        ).innerHTML = `<h2>Какой полис ОСАГО стоит дешевле - электронный или оформленный у агента?</h2>
+            <p>Стоимость полиса ОСАГО не зависит от способа его оформления - бумажный полис или электронный, на сайте страховой компании или через агрегатор. Цена везде будет одинаковая.</p>
+            <p>Агрегатор даст Вам возможность сравнить стоимость полиса в разных страховых компаниях. Ваше время - бесценно!</p>`;
+      
+        }
+        }
       function menu_left() {
         document.querySelector(".navbar_left").style="left: 0;"
       }
