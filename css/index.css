@@ -7,14 +7,9 @@
 body{
     background-color: #363d4e;
 }
-.for_main_navbar ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
+.index_main{
+    padding: 15px;
 }
-/* .index_main{
-    padding: 20px;
-} */
 .index_header_card{
     background-color: #222222;
     max-width: 1500px;
@@ -179,61 +174,6 @@ body{
     color: #4e4d4d;
 }
 
-#frame-calculator_wrap {
-    margin-top: 3%;
-}
-
-.index-mi-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1500px;
-    padding: 1rem 2rem;
-    background: #222222;
-    margin: auto;
-    border-radius: 20px;
-    text-shadow: -1px 0 2px rgba(0, 0, 0, 0.26);
-    -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
-    border: 1px solid #555555;
-}
-
-.index-mi-box2 {
-    display: none;
-}
-
-/* mi-left p */
-.index-mi-left {
-    width: 100%;
-    max-width: 760px;
-}
-
-.index-mi-left h1 {
-    color: #3fb3ff;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
-    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
-    margin-bottom: 2rem;
-}
-
-.index-mi-left p {
-    color: #a2a2a2;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 40px;
-    font-family: Ingo Stem,Helvetica,Arial,sans-serif;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -262,25 +202,6 @@ body{
         background: #363d4e;
         padding: 1rem 1rem;
         margin: 0.3rem;
-    }
-
-    .index-mi-box {
-        display: none;
-    }
-
-    .index-mi-box2 {
-        display: block;
-        width: 100%;
-        max-width: 1500px;
-        padding: 1rem 2rem;
-        background: #222222;
-        margin: auto;
-        border-radius: 20px;
-        text-shadow: -1px 0 2px rgba(0, 0, 0, 0.26);
-        -webkit-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
-        -moz-box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
-        box-shadow: 6px 10px 8px 0px rgba(34, 60, 80, 0.2);
-        border: 1px solid #555555;
     }
 }
 
@@ -349,23 +270,6 @@ body{
 @media (max-width:600px) {
     .index_main_box {
         display: block;
-    }
-
-    .index-mi-left h1 {
-        color: #3fb3ff;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 40px;
-        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
-        margin-bottom: 2rem;
-    }
-
-    .index-mi-left p {
-        color: #a2a2a2;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 40px;
-        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     }
 
     .index_main_cards1, .index_main_cards2, .index_main_cards3 {
