@@ -39,7 +39,7 @@
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #fff;
+    color: #3fb3ff;
 }
 
 .komp-header-left-text p {
@@ -239,7 +239,7 @@
 
 
 
-@media (max_width:900px) {
+@media (max-width:900px) {
     .komp-header {
         display: block;
     }
@@ -309,6 +309,10 @@
 @media (max-width:600px) {
     .komp_main_box {
         display: block;
+    }
+
+    .komp-header-right-img img {
+        width: 100%;
     }
 
     .komp_main_cards1, .komp_main_cards2, .komp_main_cards3 {
@@ -421,5 +425,34 @@
         color: #ffff;
         text-align: left;
         font-size: 14px;
+    }
+
+    .komp-header-left-text h1 {
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-weight: 600;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        color: #3fb3ff;
+    }
+
+    .komp-header {
+        padding: 1rem;
+    }
+
+    .komp-header-left-text p {
+        line-height: 1.46;
+        color: #a2a2a2;
+        font-weight: 400;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        margin-bottom: 1rem;
+        font-size: 13px;
+    }
+
+    .komp-header-left-text ul li {
+        line-height: 1.46;
+        color: #a2a2a2;
+        font-weight: 400;
+        font-family: Ingo Stem,Helvetica,Arial,sans-serif;
+        font-size: 13px;
     }
 }
