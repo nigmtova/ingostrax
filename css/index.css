@@ -267,7 +267,7 @@ body{
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .index_main_box {
         display: block;
     }
@@ -279,7 +279,7 @@ body{
         border-radius: 20px;
         background: #363d4e;
         padding: 1rem 1rem;
-        margin: 0.3rem;
+        margin: 1rem 0;
     }
 
     .index_main_cards1 h5 {
