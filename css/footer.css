@@ -145,7 +145,7 @@
     }
 
     .footer-end p {
-        color: #fff;
+        color: #a2a2a2;
         font-family: Ingo Stem,Helvetica,Arial,sans-serif;
         font-size: 12px;
         font-weight: 400;
@@ -154,10 +154,12 @@
     .footer-top {
         display: block;
         text-align: center;
+        padding-bottom: 2rem;
     }
 
     .footer-top-links4 {
         display: flex;
+        margin-top: 2rem;
         justify-content: center;
     }
 
@@ -168,18 +170,19 @@
         height: 55px;
         border-radius: 30px;
         border: 1px solid #3fb3ff;
-        color: #fff;
+        color: #3fb3ff;
         font-family: Ingo Stem,Helvetica,Arial,sans-serif;
         font-weight: 500;
         font-size: 14px;
         background: transparent;
         cursor: pointer;
         transition: all .4s ease;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     .footer-med p {
-        color: #fff;
+        color: #a2a2a2;
         font-family: Ingo Stem,Helvetica,Arial,sans-serif;
         font-size: 13px;
         font-weight: 400;

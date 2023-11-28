@@ -123,7 +123,7 @@ body {
 }
 
 .cont-header-right-p {
-    /* color: #fff; */
+    color: #a2a2a2;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     font-weight: 600;
     margin-top: 2rem;
@@ -163,7 +163,7 @@ body {
 }
 
 .cycle p {
-    /* color: #fff; */
+    color: #a2a2a2;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     margin-top: 0.5rem;
     font-weight: 600;
@@ -206,7 +206,7 @@ body {
 }
 
 .kto-mi-left p {
-    /* color: #fff; */
+    color: #a2a2a2;
     font-size: 26px;
     font-weight: 400;
     line-height: 40px;
@@ -433,7 +433,7 @@ body {
 }
 
 .cont-need-item-number {
-    border-right: 4px solid #ff9600;
+    border-right: 4px solid #3fb3ff;
     width: 40px;
     height: 47px;
     margin: 1rem;
@@ -495,7 +495,7 @@ body {
 }
 
 .cont-input-sect-h01 p {
-    /* color: #fff; */
+    color: #a2a2a2;
     font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -906,6 +906,16 @@ body {
         display: none;
     }
 
+    .cont-end {
+        width: 100%;
+        min-height: 90vh;
+        background: url(../img/need-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 5%;
+        padding-bottom: 3rem;
+    }
+
     .cont-main-end {
         display: flex;
         flex-wrap: wrap;
@@ -1056,6 +1066,16 @@ body {
         font-family: Ingo Stem,Helvetica,Arial,sans-serif;
     }
 
+    .cont-end {
+        width: 100%;
+        min-height: 90vh;
+        background: url(../img/need-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 5%;
+        padding-bottom: 3rem;
+    }
+
     .con_header_left h1 {
         margin-bottom: 1rem;
         font-size: 18px;
@@ -1154,15 +1174,20 @@ body {
         margin: 2rem;
     }
 
-    .cont-main-end-cards, .cont-main-end-cards2, .cont-main-end-cards3, .cont-main-end-cards4, img {
+    /* .cont-main-end-cards, .cont-main-end-cards2, .cont-main-end-cards3, .cont-main-end-cards4, img {
         width: 100%;
         filter: brightness(89%) saturate(155%);
         opacity: 0.5;
-    }
+    } */
     
+
     .cont-med-left {
         max-width: 330px;
         margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .cont-med-left img {
         width: 100%;
     }
 
@@ -1197,7 +1222,7 @@ body {
     }
 
     .cont-header-right-p {
-        color: #fff;
+        color: #a2a2a2;
         font-size: 12px;
         font-family: Ingo Stem,Helvetica,Arial,sans-serif;
         font-weight: 600;
