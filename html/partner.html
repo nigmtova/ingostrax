@@ -58,19 +58,19 @@
                   </label> -->
             </div>
 
-            <div class="testimonial-heading1">
-                <h1>ОТЗИВИ</h1>
+            <div class="testimonial-heading">
+                <h1>отзиви</h1>
             </div>
             <div class="testimonial-box-container">
                 <!--BOX-1-------------->
-                <div id="comnt1" class="testimonial-box">
+                <div class="testimonial-box">
                     <!--top------------------------->
                     <div class="box-top">
                         <!--profile----->
                         <div class="profile">
                             <!--img---->
                             <div class="profile-img">
-                                <img src="../img/testimonial4.jpg" />
+                                <img src="images/c-1.jpg" />
                             </div>
                             <!--name-and-username-->
                             <div class="name-user">
@@ -89,14 +89,14 @@
                     </div>
                 </div>
                 <!--BOX-2-------------->
-                <div id="comnt2" class="testimonial-box">
+                <div class="testimonial-box">
                     <!--top------------------------->
                     <div class="box-top">
                         <!--profile----->
                         <div class="profile">
                             <!--img---->
                             <div class="profile-img">
-                                <img src="../img/testimonial1.jpg" />
+                                <img src="images/c-2.jpg" />
                             </div>
                             <!--name-and-username-->
                             <div class="name-user">
@@ -115,14 +115,14 @@
                     </div>
                 </div>
                 <!--BOX-3-------------->
-                <div id="comnt3" class="testimonial-box">
+                <div class="testimonial-box">
                     <!--top------------------------->
                     <div class="box-top">
                         <!--profile----->
                         <div class="profile">
                             <!--img---->
                             <div class="profile-img">
-                                <img src="../img/testimonial2.jpg" />
+                                <img src="images/c-3.jpg" />
                             </div>
                             <!--name-and-username-->
                             <div class="name-user">
@@ -141,14 +141,14 @@
                     </div>
                 </div>
                 <!--BOX-4-------------->
-                <div id="comnt4" class="testimonial-box">
+                <div class="testimonial-box">
                     <!--top------------------------->
                     <div class="box-top">
                         <!--profile----->
                         <div class="profile">
                             <!--img---->
                             <div class="profile-img">
-                                <img src="../img/testimonial3.jpg" />
+                                <img src="images/c-4.jpg" />
                             </div>
                             <!--name-and-username-->
                             <div class="name-user">
@@ -251,37 +251,5 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            function back_style1() {
-                document.querySelector("#checkbox2").checked?(localStorage.setItem("back_style", "sun")):(localStorage.setItem("back_style", "moon"));window.location.reload()
-            }
-            if (localStorage.getItem("back_style") !== "moon") {
-            document.querySelector("#checkbox2").checked = true;
-          } else {
-            document.querySelector("#checkbox2").checked = false;
-          }
-          if (localStorage.getItem("back_style")=="sun") {
-            document.querySelector("body").style="background-color: #363d4e;"
-            
-          }else{
-            document.querySelector("body").style="background-color: #F9FAFB;"
-            document.querySelector(".for_main_navbar").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
-            document.querySelector(".footer").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
-            document.querySelector("#comnt1").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
-            document.querySelector("#comnt2").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
-            document.querySelector("#comnt3").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
-            document.querySelector("#comnt4").style="background-color: #FFFFFF; border: 1px solid #F0F3F6; color: #2E3038;";
-          }
-    
-          if (localStorage.getItem("back_style")=="sun") {
-            document.querySelector("body").style="background-color: #363d4e;"
-            
-          }else{
-            document.querySelector("li").style="color: #2E3038;";
-            document.querySelector("h1").style="color: #2E3038;";
-            document.querySelector("p").style="color: #2E3038;";
-          }
-        </script>
 </body>
 </html>
