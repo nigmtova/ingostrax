@@ -1,8 +1,13 @@
-a{
+.for_main_navbar ul li a{
   text-decoration: none;
   color: #a2a2a2;
 }
-.front_ul{
+
+.for_main_navbar ul li a:hover {
+  color: #3fb3ff;
+}
+
+.for_main_navbar ul{
   display: flex;
   align-items: center;
   list-style: none;
@@ -11,16 +16,20 @@ a{
   font-weight: 600;
   font-size: 15px;
 }
-.for_main_navbar img{
+.for_main_navbar ul li{
   cursor: pointer;
 }
-.front_ul li{
-  cursor: pointer;
+
+.bx {
+  display: none;
+  font-size: 30px;
 }
-.back_ul{
-  list-style: none;
-  line-height: 40px;
+
+.nav_right {
+  display: flex;
+  align-items: center;
 }
+
 .for_main_navbar{
   margin-top: 30px !important;
   background-color: #222222;
@@ -31,7 +40,7 @@ a{
   max-width: 1500px;
   width: 100%;
   margin: auto;
-  height: 85px;
+  height: 70px;
   border-radius: 20px;
   border: 1px solid #555555;
   padding: 0 30px;
@@ -148,8 +157,44 @@ a{
   .input:checked + .slider:before {
     transform: translateX(30px);
   }
+
+
+  @media (max-width:850px) {
+    .bx {
+      display: none;
+      font-size: 30px;
+      margin-left: 1rem;
+    }
+
+    .for_main_navbar ul {
+      display: none;
+    }
+  }
+
+  @media (max-width:420px) {
+    .theme-switch {
+      --toggle-size: 10px;
+      --container-width: 5em;
+      --container-height: 2.6em;
+      --container-radius: 6.25em;
+      --container-light-bg: #3D7EAE;
+      --container-night-bg: #1D1F2C;
+      --circle-container-diameter: 3.375em;
+      --sun-moon-diameter: 2em;
+      --sun-bg: #ECCA2F;
+      --moon-bg: #C4C9D1;
+      --spot-color: #959DB1;
+      --circle-container-offset: calc((var(--circle-container-diameter) - var(--container-height)) / 2 * -1);
+      --stars-color: #fff;
+      --clouds-color: #F3FDFF;
+      --back-clouds-color: #AACADF;
+      --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);
+      --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
+    }
+  }
+
 .theme-switch {
-    --toggle-size: 12px;
+    --toggle-size: 10px;
     /* the size is adjusted using font-size,
        this is not transform scale,
        so you can choose any size */
@@ -349,48 +394,4 @@ a{
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-  .bx-menu-alt-left{
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .navbar_left{
-    width: 400px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -400px;
-    background-color: #222222;
-    transition: 1s;
-    border: 1px solid #555555;
-    padding: 15px;
-    z-index: 111;
-  }
-  .bx-x{
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .for_rigth_icon_x{
-    text-align: right;
-  }
-
-
-
-  @media(max-width:400px){
-    .navbar_left{
-      width: 100%;
-    }
-  }
-  @media (max-width:1100px) {
-    .front_ul {
-      display: none;
-    }
-  }
-  @media(min-width:1101px){
-    .navbar_left{
-      left: -400px;
-    }
-    .bx-menu-alt-left{
-      display: none !important; 
-    }
   }
